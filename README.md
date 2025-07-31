@@ -2,6 +2,11 @@
 
 This repository contains all the scripts to create a conda environment for a Warp installation and an IPython notebook to guide and streamline tomogram preprocessing through Warp for new users.
 
+## Clone this Repository
+```bash
+git clone https://github.com/dxcai01/warp_basics.git
+```
+
 ## Requirements
 
 You will need:
