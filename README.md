@@ -1,70 +1,121 @@
-# Warp Tomogram Preprocessing Basics
+# 🔬 Warp Tomogram Preprocessing Basics
+
+<div align="center">
+
+![Cryo-ET](https://img.shields.io/badge/Cryo--ET-Tomography-blue?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-Notebook-orange?style=for-the-badge)
+
+*A complete guide and toolkit for streamlined tomogram preprocessing through Warp*
+
+</div>
+
+---
+
+## 📋 Overview
 
 This repository contains all the scripts to create a conda environment for a Warp installation and an IPython notebook to guide and streamline tomogram preprocessing through Warp for new users.
 
-## Clone this Repository
+## 🚀 Quick Start
+
 ```bash
 git clone https://github.com/dxcai01/warp_basics.git
+cd warp_basics
 ```
 
-## Requirements
+## ✅ Requirements
 
-You will need:
-- A conda distribution (miniconda or miniforge is preferred)
-- A conda environment containing Warp
-- Your data
+Before getting started, ensure you have:
 
-## Installation
+- 🐍 **Conda distribution** (miniconda or miniforge preferred)
+- ⚡ **Warp environment** (we'll help you set this up!)
+- 📊 **Your cryo-ET data**
 
-### 1. Install Micromamba (Optional)
+---
 
-To streamline installation of a conda distribution, run the provided micromamba installation script:
+## 🛠️ Installation
+
+### Step 1: Install Micromamba *(Optional)*
+
+> 💡 **Tip:** Skip this step if you already have conda installed
 
 ```bash
 chmod +x install_micromamba.sh
 ./install_micromamba.sh
 ```
 
-### 2. Install Warp
-
-Run the provided Warp installation script to install Warp in your conda environment:
+### Step 2: Install Warp Environment
 
 ```bash
 chmod +x warp_dev32_conda.sh
 ./warp_dev32_conda.sh
 ```
 
-> **Note:** If you already have a conda distribution installed, you will need to edit the `warp_dev32_conda.sh` script to correspond with your installed distribution and libraries.
+> ⚠️ **Note:** If you already have a conda distribution installed, edit the `warp_dev32_conda.sh` script to match your setup.
 
-## Data Organization
+---
 
-Once you get your data from the cryo-ET session, organize your working directory as follows:
+## 📁 Data Organization
+
+Organize your working directory following this structure:
 
 ```
-TOMOGRAM_WORKING_DIRECTORY/
-├── frames/                     # Symlink your raw frames into this directory to be safe
-├── mdocs/                      # Copy and rename .mdoc files from tomo5 here
-├── rawdata/
-│   ├── frames/                # All your raw frames should be moved here
-│   ├── mdoc/                  # All your raw mdoc files should be moved here
-│   ├── tiltseries/            # All your tiltseries .mrc files should be moved here
-│   └── tomo5setupstuff/       # Metadata/extra files from tomo5 session
-│       ├── Batch/
-│       ├── SearchMaps/
-│       ├── Session.dm
-│       └── Thumbnails/
-└── warp_processing.ipynb      # Copy from wherever you saved it
+📂 TOMOGRAM_WORKING_DIRECTORY/
+├── 🔗 frames/                     # Symlinked raw frames (safety backup)
+├── 📄 mdocs/                      # Renamed .mdoc files from tomo5
+├── 📂 rawdata/
+│   ├── 🎬 frames/                # Raw frame files
+│   ├── 📋 mdoc/                  # Original mdoc files
+│   ├── 🎥 tiltseries/            # Tiltseries .mrc files
+│   └── ⚙️ tomo5setupstuff/       # Tomo5 session metadata
+│       ├── 📁 Batch/
+│       ├── 🗺️ SearchMaps/
+│       ├── 💾 Session.dm
+│       └── 🖼️ Thumbnails/
+└── 📓 warp_processing.ipynb      # Main processing notebook
 ```
 
-### Directory Notes
+### 📝 Directory Details
 
-- **mdocs/**: This directory will contain renamed .mdoc files using a better regex system (`TS_XXX`, where XXX is digits) than the tomo5 output, making it easier to send tomograms to different software suites.
-- **tomo5setupstuff/**: Contains metadata and extra files from the tomo5 session. Not necessary for processing, but useful to preserve just in case.
+| Directory | Purpose |
+|-----------|---------|
+| **mdocs/** | Renamed .mdoc files with improved naming (`TS_XXX`) for better software compatibility |
+| **tomo5setupstuff/** | Archived tomo5 metadata - not required for processing but good to keep |
 
-## Running the Notebook
+---
 
-1. Allocate resources: **1 GPU, 10 CPU, 12GB RAM**
-2. Activate your conda environment
-3. Open the notebook with either VS Code or JupyterLab
+## 🏃‍♂️ Running the Workflow
 
-You should now be ready to go! 🚀
+### System Requirements
+- 🖥️ **GPU:** 1 unit
+- ⚡ **CPU:** 10 cores  
+- 💾 **RAM:** 12GB
+
+### Launch Steps
+
+1. **Activate your environment**
+   ```bash
+   conda activate your-warp-env
+   ```
+
+2. **Start your preferred interface**
+   ```bash
+   # Option A: VS Code
+   code warp_processing.ipynb
+   
+   # Option B: JupyterLab
+   jupyter lab warp_processing.ipynb
+   ```
+
+---
+
+<div align="center">
+
+## 🎉 Ready to Process!
+
+*You're all set to start preprocessing your tomograms with Warp!*
+
+---
+
+**Questions?** Open an issue • **Contributions?** Submit a PR • **License:** MIT
+
+</div>
