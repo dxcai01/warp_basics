@@ -6,10 +6,12 @@ You will need:
 3. your data
 
 To streamline installation of a conda distribution, run the provided micromamba installation script
+
 chmod +x install_micromamba.sh
 ./install_micromamba.sh
 
 Then run the provided warp_dev32_conda.sh script to install warp in your conda environment.
+
 chmod +x warp_dev32_conda.sh
 ./warp_dev32_conda.sh
 
@@ -33,7 +35,4 @@ TOMOGRAM_WORKING_DIRECTORY/
 
 Now just allocated 1 GPU, 10 CPU, and 12g MEM, activate your environment, and open the notebook with either vscode or jupyterlab. 
 
-You should now be ready to go.
-
-Daniel Cai 2025
-
+You should now be ready to go
