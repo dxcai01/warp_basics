@@ -8,11 +8,13 @@ You will need:
 To streamline installation of a conda distribution, run the provided micromamba installation script
 
 chmod +x install_micromamba.sh
+
 ./install_micromamba.sh
 
 Then run the provided warp_dev32_conda.sh script to install warp in your conda environment.
 
 chmod +x warp_dev32_conda.sh
+
 ./warp_dev32_conda.sh
 
 If you already have a conda distribution installed, you will have to edit the warp_dev32_conda.sh script to correspond with your installed distro and your libraries.
