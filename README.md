@@ -52,6 +52,15 @@ chmod +x warp_dev32_conda.sh
 
 > ⚠️ **Note:** If you already have a conda distribution installed, edit the `warp_dev32_conda.sh` script to match your setup.
 
+### Step 3: Download Tutorial Data *(Optional)*
+
+> Not necessary if you have your own datasets
+
+```bash
+chmod +x empiar_10164_download.sh
+./empiar_10164_download.sh
+```
+
 ---
 
 ## 📁 Data Organization
