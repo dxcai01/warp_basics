@@ -1,5 +1,3 @@
-Here's a nicely formatted version of your instructions:
-
 # Warp Tomogram Preprocessing
 
 This repository contains all the scripts to create a conda environment for a Warp installation and an IPython notebook to guide and streamline tomogram preprocessing through Warp for new users.
