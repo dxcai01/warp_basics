@@ -1,4 +1,4 @@
-# Warp Tomogram Preprocessing
+# Warp Tomogram Preprocessing Basics
 
 This repository contains all the scripts to create a conda environment for a Warp installation and an IPython notebook to guide and streamline tomogram preprocessing through Warp for new users.
 
